@@ -9,7 +9,10 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "webRequest"],
+  "host_permissions": [
+    "https://openexchangerates.org/"
+  ],
   "commands": {
     "_execute_action": {
       "suggested_key": {
